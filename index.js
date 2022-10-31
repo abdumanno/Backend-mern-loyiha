@@ -21,7 +21,7 @@ app.use(cors());
 app.use("/", require("./router/user"));
 
 app.get("/", (req, res) => {
-  res.send(req);
+  res.send("App run server");
 });
 
 app.listen(process.env.PORT, (req, res) => {
